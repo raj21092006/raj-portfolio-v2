@@ -648,3 +648,44 @@ color: #ffffff;
         margin-left: 0;
     }
 }
+
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 999;
+    background: #00d4ff ;
+    color: white;
+}
+
+.light-mode {
+    background: #ffffff;
+    color: #000000;
+}
+
+.light-mode .sidebar {
+    background: #f1f5f9;
+}
+
+.light-mode .hero,
+.light-mode .main-content,
+.light-mode .about-section,
+.light-mode .skills-section,
+.light-mode .projects-section,
+.light-mode .contact-section {
+    background: #ffffff;
+    color: #000000;
+}
+
+.light-mode h1,
+.light-mode h2,
+.light-mode h3,
+.light-mode p,
+.light-mode a {
+    color: #000000;
+}

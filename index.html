@@ -4,11 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raj Patra Portfolio V2</title>
+
+    <title>Raj Patra | Full Stack Developer Portfolio</title>
+
+    <meta name="description"
+        content="Raj Patra - Full Stack Developer specializing in modern, responsive web applications using HTML, CSS and JavaScript.">
+
+    <meta name="keywords" content="Raj Patra, Full Stack Developer, Web Developer, Portfolio">
+
+    <meta name="author" content="Raj Patra">
+
+    <meta property="og:title" content="Raj Patra | Full Stack Developer">
+    <meta property="og:description" content="Explore Raj Patra's portfolio, skills and projects.">
+    <meta property="og:type" content="website">
+
+    <meta name="robots" content="index, follow">
 
     <link rel="stylesheet" href="style.css">
-
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -370,17 +382,30 @@
 
 <footer>
     <p>© 2025 Raj Patra. All Rights Reserved.</p>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=raj21092006.raj-portfolio-v2">
 </footer>
+
+<button id="theme-toggle">🌙</button>
 
 <script>
     window.addEventListener("load", function () {
 
         setTimeout(function () {
-
             document.getElementById("preloader").style.display = "none";
-
         }, 2000);
 
+    });
+
+    const themeToggle = document.getElementById("theme-toggle");
+
+    themeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("light-mode");
+
+        if (document.body.classList.contains("light-mode")) {
+            themeToggle.innerHTML = "☀️";
+        } else {
+            themeToggle.innerHTML = "🌙";
+        }
     });
 </script>
 
